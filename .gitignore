@@ -1,0 +1,6 @@
+.*.cfg
+bin
+develop-eggs
+*.egg
+doc.txt
+parts
