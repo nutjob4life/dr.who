@@ -4,3 +4,4 @@ develop-eggs
 *.egg
 doc.txt
 parts
+*.egg-info

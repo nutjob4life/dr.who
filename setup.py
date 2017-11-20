@@ -1,8 +1,6 @@
 # encoding: utf-8
 
 import os.path
-from distribute_setup import use_setuptools
-use_setuptools()
 from setuptools import setup, find_packages
 
 # Package data
