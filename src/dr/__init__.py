@@ -1,7 +1,7 @@
 # encoding: utf-8
 # See http://packages.python.org/distribute/setuptools.html#namespace-packages
 
-u'''dr — namespace package'''
+'''dr — namespace package'''
 
 try:
     __import__('pkg_resources').declare_namespace(__name__)
