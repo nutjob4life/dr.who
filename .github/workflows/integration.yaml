@@ -1,0 +1,20 @@
+---
+name: ∫ Integration
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  integrate:
+    name: ∮ Integrate
+    runs-on: ubuntu-latest
+    steps:
+      - name: 💳 Checking out
+        uses: actions/checkout@v2
+      - name: 🤠 Roundup
+        uses: nutjob4life/roundup-action@master
+
+...
+
