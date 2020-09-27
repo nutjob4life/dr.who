@@ -1,6 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
 .*.cfg
-bin
-develop-eggs
 *.egg
-doc.txt
-parts
+MANIFEST
+build/
+develop-eggs/
+parts/
+dist/
+bin/
+build/
