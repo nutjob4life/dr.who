@@ -19,7 +19,6 @@ _namespaces      = ['dr']
 _zipSafe         = True
 _keywords        = 'placeholder'
 _testSuite       = 'dr.who.tests.test_suite'
-_entryPoints     = {}
 _requirements    = ['setuptools']
 _extras          = {'test': []}
 _classifiers     = [
@@ -29,6 +28,10 @@ _classifiers     = [
     'Operating System :: OS Independent',
     'Programming Language :: Python',
 ]
+_entryPoints     = {
+    'console_scripts': 'zipper=dr.who.zipper:main'
+}
+
 
 # Setup Metadata
 # --------------
