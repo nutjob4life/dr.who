@@ -15,6 +15,9 @@ jobs:
         uses: actions/checkout@v2
       - name: 🤠 Roundup
         uses: nutjob4life/roundup-action@master
+        env:
+          pypi_username: ${{secrets.PYPI_USERNAME}}
+          pypi_password: ${{secrets.PYPI_PASSWORD}}
 
 ...
 
