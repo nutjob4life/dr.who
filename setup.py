@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 # ------------
 
 _name            = 'dr.who'
-_version         = '0.0.0'
+_version         = '2.3.6'
 _description     = 'Package Reservation'
 _url             = 'http://pypi.python.org/pypi/dr.who'
 _author          = 'Sean Kelly'
