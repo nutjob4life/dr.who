@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 
-'''Some zipfile testing'''
+'''Some zipfile testing.'''
 
 import os, sys, tempfile, zipfile
 
