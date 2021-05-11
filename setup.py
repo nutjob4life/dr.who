@@ -2,12 +2,12 @@
 
 import os.path
 from setuptools import setup, find_packages
+import versioneer
 
 # Package data
 # ------------
 
 _name            = 'dr.who'
-_version         = '2.3.6'
 _description     = 'Package Reservation testing whatever'
 _url             = 'http://pypi.python.org/pypi/dr.who'
 _author          = 'Sean Kelly'
@@ -61,6 +61,7 @@ setup(
     packages=find_packages('src', exclude=['ez_setup', 'distribute_setup', 'bootstrap']),
     package_dir={'': 'src'},
     url=_url,
-    version=_version,
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     zip_safe=_zipSafe,
 )
