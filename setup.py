@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 # ------------
 
 _name            = 'dr.who'
-_version         = '2.3.6'
+_version         = '2.3.7'
 _description     = 'Package Reservation'
 _url             = 'http://pypi.python.org/pypi/dr.who'
 _author          = 'Sean Kelly'
@@ -19,7 +19,10 @@ _namespaces      = ['dr']
 _zipSafe         = True
 _keywords        = 'placeholder'
 _testSuite       = 'dr.who.tests.test_suite'
-_requirements    = ['setuptools']
+_requirements    = [
+    'setuptools',
+    'numpy'
+]
 _extras          = {'test': []}
 _classifiers     = [
     'Development Status :: 1 - Planning',

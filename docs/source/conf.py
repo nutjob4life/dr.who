@@ -1,69 +1,31 @@
-# Sphinx Configuration 🐈
-# =======================
+# Configuration file for the Sphinx documentation builder.
 #
-# See the full Sphinx config docs at::
-#     https://www.sphinx-doc.org/en/master/usage/configuration.html
+# This file only contains a selection of the most common options. For a full
+# list see the documentation:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+# -- Path setup --------------------------------------------------------------
 
-# Project Metadata
-# ----------------
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# There's both ``version`` and ``release`` here per Sphinx quickstart; is
-# there a way to get parity with ``setup.py`` though? 🤔
+# import os
+# import sys
+# sys.path.insert(0, os.path.abspath('.'))
 
-project            = 'PDS Deep Archive'
-author             = 'NASA Planetary Data System'
-copyright          = '2020 California Institute of Technology'
-version            = '1.0'
-release            = '1.0.0'
-language           = 'en'
+# -- Project information -----------------------------------------------------
+
+project = 'pds-doi-service'
+copyright = '2020, pds engineering node'
+author = 'pds engineering node'
 
 
-# Sphinx Setup
-# ------------
-#
-# Stuff that controls Sphinx.
-#
-#
-# Settings
-# ~~~~~~~~
-#
-# Note that some of these settings are for certain extensions, see below.
+# -- General configuration ---------------------------------------------------
 
-exclude_patterns   = []
-html_static_path   = ['_static']
-html_theme         = 'alabaster'
-master_doc         = 'index'
-pygments_style     = 'sphinx'
-source_suffix      = '.rst'
-templates_path     = ['_templates']
-todo_include_todos = True
-
-# Alabaster Theme
-# ~~~~~~~~~~~~~~~
-#
-# The "alabaster" theme requires these settings
-
-html_theme_options = {
-    'logo': 'PDS_Planets.png',
-    'github_user': 'NASA-PDS-Incubator',
-    'github_repo': 'pds-deep-archive'
-}
-
-html_sidebars = {
-    '**': [
-        'about.html',
-        'relations.html',  # needs 'show_related': True theme option to display
-        'searchbox.html',
-        'navigation.html'
-    ]
-}
-
-# Extensions
-# ~~~~~~~~~~
-#
-# These are add-ons, most of which we don't use (for now).
-
+# Add any Sphinx extension module names here, as strings. They can be
+# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
+# ones.
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
@@ -71,14 +33,46 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
     'sphinx.ext.autosummary',
+    'sphinx_rtd_theme',
+    'sphinxarg.ext',
 ]
 
-# Other Options
-# ~~~~~~~~~~~~~
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ['_templates']
+
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+exclude_patterns = []
+
+
+# -- Options for HTML output -------------------------------------------------
+
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
 #
-# Not used here, but we could include in the future:
-#
-# • HTMLHelp formatting
-# • LaTeX output
-# • Man page generation
-# • TeXinfo output
+html_theme = 'sphinx_rtd_theme'
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ['_static']
+
+# -- Read the docs config -------
+
+html_theme_options = {
+    'canonical_url': '',
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
+}
+
+html_logo = '_static/images/PDS_Planets.png'
+
