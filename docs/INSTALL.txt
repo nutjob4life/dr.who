@@ -1,5 +1,0 @@
-dr.who Installation
-===================
-
-This package does not need to be installed, as currently it exists solely to
-reserve the package name.
