@@ -1,9 +1,5 @@
 # Changelog
 
-## [versioneer.get_version(](https://github.com/nutjob4life/dr.who/tree/versioneer.get_version() (2021-05-11)
-
-[Full Changelog](https://github.com/nutjob4life/dr.who/compare/vversio...versioneer.get_version()
-
 ## [vversio](https://github.com/nutjob4life/dr.who/tree/vversio) (2021-05-11)
 
 [Full Changelog](https://github.com/nutjob4life/dr.who/compare/v2.3.5...vversio)
